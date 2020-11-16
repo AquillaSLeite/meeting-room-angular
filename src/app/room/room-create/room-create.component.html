@@ -1,0 +1,26 @@
+<h3>Create Room</h3>
+<div style="width: 400px;">
+  <form autocomplete="off" novalidate [formGroup]="roomForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">name</label>
+      <input type="text" class="form-control" formControlName="name" [formGroup]="roomForm">
+    </div>
+
+    <div class="form-group">
+      <label for="name">date</label>
+      <input type="date" class="form-control" formControlName="date" [formGroup]="roomForm">
+    </div>
+
+    <div class="form-group">
+      <label for="name">startHour</label>
+      <input type="time" class="form-control" formControlName="startHour" [formGroup]="roomForm">
+    </div>
+
+    <div class="form-group">
+        <label for="name">endHour</label>
+        <input type="time" class="form-control" formControlName="endHour" [formGroup]="roomForm">
+      </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
